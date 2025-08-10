@@ -1,10 +1,10 @@
-import { Pointer, X } from "lucide-react";
+import {  X } from "lucide-react";
 import React, { useContext } from "react";
 import { allTypes } from "./data";
 import Image from "next/image";
 import { newContext } from "./Context";
 
-function CarSelected({name}:{ name: string} ) {
+function CarSelected(name ) {
   
   const { setSelect } = useContext(newContext);
   

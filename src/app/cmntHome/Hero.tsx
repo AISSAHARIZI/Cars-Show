@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function Hero() {
@@ -9,8 +10,8 @@ function Hero() {
         <button className='bg-blue-700 text-white rounded-3xl p-2 w-[10rem] text-xl'>Explore Cars</button>
       </div>
       <div className='lg:w-[50%] overflow-hidden  max-lg:relative '>
-        <img src="hero.png" className='lg:w-[75%]  ' alt="" />
-        <img src="hero-bg.png" className='absolute top-[-30]   right-[-400] xl:h-[50rem]  z-[-1] w-[65%] max-lg:w-full max-lg:top-[-10] max-lg:left-20' alt="" />
+        <Image src="hero.png" className='lg:w-[75%]  ' alt="" />
+        <Image src="hero-bg.png" className='absolute top-[-30]   right-[-400] xl:h-[50rem]  z-[-1] w-[65%] max-lg:w-full max-lg:top-[-10] max-lg:left-20' alt="" />
       </div>
     </div>
   )

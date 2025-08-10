@@ -2,11 +2,10 @@
 import Image from "next/image";
 import React, { useContext, useState } from "react";
 import { allTypes, fuels, manufacturers, yearsOfProduction } from "./data";
-import { ComboBox, Item } from "@adobe/react-spectrum";
 import { defaultTheme, Provider } from "@adobe/react-spectrum";
 import CarSelected from "./CarSelected";
 import { newContext } from "./Context";
-import { ListFilter, PinOff } from "lucide-react";
+import {  PinOff } from "lucide-react";
 
 import { CheckIcon, ChevronsUpDownIcon } from "lucide-react";
 
