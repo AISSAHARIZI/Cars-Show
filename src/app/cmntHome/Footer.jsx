@@ -1,12 +1,13 @@
 import React from "react";
 import { footerLinks } from "./data";
+import Image from "next/image";
 
 function Footer() {
   return (
     <div className="mb-20  border-t-1 border-gray-200  pt-9">
       <div className="flex  lg:justify-between max-lg:flex-col items-start gap-10">
         <div className="flex flex-col gap-4">
-          <img src="logo.svg" className="w-30" alt="" />
+          <Image height={50} width={50} src="logo.svg" className="w-30" alt="" />
           <p className="text-gray-500">Carthub 2013</p>
           <p className="text-gray-500">All Rigths Reserved ©</p>
         </div>

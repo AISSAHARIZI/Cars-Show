@@ -4,7 +4,7 @@ import { allTypes } from "./data";
 import Image from "next/image";
 import { newContext } from "./Context";
 
-function CarSelected(name ) {
+function CarSelected({name} ) {
   
   const { setSelect } = useContext(newContext);
   
@@ -75,14 +75,12 @@ function CarSelected(name ) {
           <p className="font-medium">{theCarSelected?.manufacturer}</p>
         </div>
         <div
-          key={theCarSelected?.name}
           className="flex items-center justify-between py-1 border-b"
         >
           <p className="text-gray-400">bodyType :</p>
           <p className="font-medium">{theCarSelected?.bodyType}</p>
         </div>
         <div
-          key={theCarSelected?.name}
           className="flex items-center justify-between py-1 border-b"
         >
           <p className="text-gray-400">price :</p>
@@ -92,7 +90,6 @@ function CarSelected(name ) {
           </p>
         </div>
         <div
-          key={theCarSelected?.name}
           className="flex items-center justify-between py-1 border-b"
         >
           <p className="text-gray-400">year :</p>

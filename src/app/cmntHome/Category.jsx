@@ -89,9 +89,9 @@ function Category() {
                     <CommandList>
                       <CommandEmpty>No Module found.</CommandEmpty>
                       <CommandGroup>
-                        {manufacturers.map((framework) => (
+                        {manufacturers.map((framework,index) => (
                           <CommandItem
-                            key={framework.title}
+                            key={index}
                             value={framework.title}
                             onSelect={(currentValue) => {
                               setModule(
@@ -149,9 +149,9 @@ function Category() {
                     <CommandList>
                       <CommandEmpty>No Car found.</CommandEmpty>
                       <CommandGroup>
-                        {filterTypes.map((framework) => (
+                        {filterTypes.map((framework,index) => (
                           <CommandItem
-                            key={framework.name}
+                            key={index}
                             value={framework.name}
                             onSelect={(currentValue) => {
                               setType(
@@ -193,7 +193,7 @@ function Category() {
                 alt=""
               />
             </div>
-            <button >
+          
               <AlertDialog>
                 <AlertDialogTrigger className="  bg-gray-300 text-gray-800 font-bold rounded-full px-2.5 py-2">
                   <PinOff />
@@ -214,7 +214,7 @@ function Category() {
                   </AlertDialogFooter>
                 </AlertDialogContent>
               </AlertDialog>
-            </button>
+        
           </div>
           <div className="flex items-center max-lg:justify-center gap-2">
             <select
@@ -225,8 +225,8 @@ function Category() {
               onChange={(e) => setYear(e.target.value)}
               value={selYear}
             >
-              {yearsOfProduction.map((year) => (
-                <option key={year.value} value={year.value}>
+              {yearsOfProduction.map((year,index) => (
+                <option key={index} value={year.value}>
                   {year.title}
                 </option>
               ))}
@@ -238,8 +238,8 @@ function Category() {
             focus:border-blue-500 transition-all duration-200 ease-in-out "
               onChange={(e) => setFuel(e.target.value)}
             >
-              {fuels.map((fuel) => (
-                <option key={fuel.value} value={fuel.value}>
+              {fuels.map((fuel,index) => (
+                <option key={index} value={fuel.value}>
                   {fuel.title}
                 </option>
               ))}
@@ -331,7 +331,7 @@ function Category() {
           <>
             <div className="fixed inset-0 bg-black/50  z-40"></div>
             <div className="fixed w-[80%] top-[55] left-[95]  z-50">
-              <CarSelected name={name} />
+              <CarSelected name={name} />  
             </div>
           </>
         )}
