@@ -329,8 +329,8 @@ function Category() {
         </div>
         {select && (
           <>
-            <div className="fixed inset-0 bg-black/50  z-40"></div>
-            <div className="fixed w-[80%] top-[55] left-[95]  z-50">
+            <div className="fixed inset-0 bg-black/50 h-[100%]  z-40"></div>
+            <div className="fixed w-[80%] top-1/12 left-1/3 max-sm:left-1/5  z-50">
               <CarSelected name={name} />  
             </div>
           </>

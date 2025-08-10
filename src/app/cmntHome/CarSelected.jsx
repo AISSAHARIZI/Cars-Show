@@ -1,5 +1,5 @@
 import {  X } from "lucide-react";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { allTypes } from "./data";
 import Image from "next/image";
 import { newContext } from "./Context";
